@@ -1,0 +1,184 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="MAIN.aspx.cs" Inherits="MAIN" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    		<meta charset="utf-8" />
+		<title>Hệ thống trồng lan thông minh</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- LAYER SLIDER -->
+		<link href="assets/plugins/slider.layerslider/css/layerslider.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+    <link href="assets/css/layout-datatables.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+    .auto-style1 {
+        max-width: 980px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+</head>
+	<body class="smoothscroll enable-animation">
+        <form id="form1" runat="server">
+    <!-- SLIDE TOP -->
+		<div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="MAIN.aspx" class="w3-bar-item w3-button"><b>Nhóm</b> LANH</a>
+    <!-- Float links to the right. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+        <a href="project.aspx" class="w3-bar-item w3-button">Projects</a>
+        <a href="search.aspx" class="w3-bar-item w3-button">Database</a>
+             <a href="AboutUs.aspx" class="w3-bar-item w3-button">About Us</a>
+            <a href="online.aspx" class="w3-bar-item w3-button">Supervision</a>
+           <a href="UserHistory.aspx" class="w3-bar-item w3-button">System History</a>
+        </div>
+     </div>
+    </div>
+            </form>
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			
+	
+
+			<!-- LAYER SLIDER -->
+			<section id="slider" class="alternate">
+				<div class="containers slider">
+
+					<div class="layerslider" style="height:550px; width:1200px;">
+
+						<div class="ls-slide" data-ls="overflow:true;kenburnsscale:1.2;parallaxaxis:x;parallaxdistance:-10;">
+							
+							<img width="2587" height="1455" src="demo_files/images/layerslider/autumn-bg.jpg" class="ls-bg" alt="" />
+							
+							<p style="font-size:70px;color:#003cff;top:350px;left:30px;opacity:1;z-index:9999;" class="ls-l" data-ls="offsetxin:-50;durationin:1500;delayin:100;rotatexin:40;skewxin:-30;scaleyin:1.3;transformoriginin:50% 0% 0;loop:true;loopoffsetx:-10;loopduration:2000;loopeasing:easeInOutSine;loopskewx:-5;looptransformorigin:0% 50% 0;loopcount:-1;loopyoyo:true;">
+								GROUP "LANH"
+							</p>
+							<p style="font-size:30px;color:#ff0000;top:420px;left:30px;text-align:initial;font-weight:300;font-style:normal;text-decoration:none;wordwrap:false;opacity:1;z-index:9999;" class="ls-l" data-ls="offsetxin:50;durationin:1500;rotatexin:-40;skewxin:-30;scaleyin:1.5;transformoriginin:50% 100% 0;loop:true;loopoffsetx:10;loopduration:2000;loopeasing:easeInOutSine;loopskewx:-5;looptransformorigin:0% 50% 0;loopcount:-1;loopyoyo:true;">
+								GIÁM SÁT HỆ THỐNG LAN
+							</p>
+
+							<img width="553" height="497" src="assets/images/_smarty/lan1.jpg" class="ls-l" alt="" style="top:-100%;left:1753px;opacity:1;width:243px;height:309px;" data-ls="durationin:0;fadein:false;scalexin:0;scaleyin:0;loop:true;loopoffsety:300sh;loopduration:20000;looprotate:random(-360,360);loopcount:-1;parallax:true;parallaxlevel:6;">
+							<img width="553" height="497" src="assets/images/_smarty/lan2.jpg" class="ls-l" alt="" style="top:-100%;left:672px;opacity:1;width:221px;height:288px;" data-ls="durationin:0;delayin:9600;fadein:false;scalexin:0;scaleyin:0;loop:true;loopoffsety:300sh;loopduration:20000;looprotate:random(-360,360);loopcount:-1;parallax:true;parallaxlevel:4;">
+							<img width="467" height="482" src="assets/images/_smarty/lan3.jpg" class="ls-l" alt="" style="top:-100%;left:130px;opacity:1;width:211px;height:320px;" data-ls="durationin:0;delayin:12000;fadein:false;scalexin:0;scaleyin:0;loop:true;loopoffsety:300sh;loopduration:20000;looprotate:random(-360,360);loopcount:-1;parallax:true;parallaxlevel:10;">
+							<img width="467" height="482" src="assets/images/_smarty/lan1.jpg" class="ls-l" alt="" style="top:-100%;left:1231px;opacity:1;width:159px;height:267px;" data-ls="durationin:0;delayin:7200;fadein:false;scalexin:0;scaleyin:0;loop:true;loopoffsety:300sh;loopduration:20000;looprotate:random(-360,360);loopcount:-1;parallax:true;parallaxlevel:4;">
+							<img width="316" height="438" src="assets/images/_smarty/lan2.jpg" class="ls-l" alt="" style="top:-100%;left:420px;opacity:1;width:131px;height:321px;" data-ls="durationin:0;delayin:4800;fadein:false;scalexin:0;scaleyin:0;loop:true;loopoffsety:300sh;loopduration:20000;looprotate:random(-360,360);loopcount:-1;parallax:true;parallaxlevel:6;">
+							<img width="316" height="438" src="assets/images/_smarty/lan3.jpg" class="ls-l" alt="" style="top:-100%;left:1490px;opacity:1;width:131px;height:321px;" data-ls="durationin:0;delayin:14400;fadein:false;scalexin:0;scaleyin:0;loop:true;loopoffsety:300sh;loopduration:20000;looprotate:random(-360,360);loopcount:-1;parallax:true;parallaxlevel:12;">
+							<img width="688" height="406" src="assets/images/_smarty/lan1.jpg" class="ls-l" alt="" style="top:-100%;left:723px;opacity:1;width:508px;height:300px;" data-ls="durationin:0;delayin:16800;fadein:false;scalexin:0;scaleyin:0;loop:true;loopoffsety:300sh;loopduration:20000;looprotate:random(-360,360);loopcount:-1;parallax:true;parallaxlevel:8;">
+							<img width="688" height="406" src="assets/images/_smarty/lan2.jpg" class="ls-l" alt="" style="top:-100%;left:-256px;opacity:1;width:386px;height:227px;" data-ls="durationin:0;delayin:2400;fadein:false;scalexin:0;scaleyin:0;loop:true;loopoffsety:300sh;loopduration:20000;looprotate:random(-360,360);loopcount:-1;parallax:true;parallaxlevel:2;">
+							<img width="553" height="497" src="assets/images/_smarty/lan3.jpg" class="ls-l" alt="" style="top:-100%;left:387px;opacity:1;" data-ls="durationin:0;fadein:false;scalexin:0;scaleyin:0;loop:true;loopoffsety:300sh;loopduration:10000;looprotate:random(-360,360);loopcount:-1;parallax:true;parallaxlevel:4;">
+							<img width="467" height="482" src="assets/images/_smarty/lan1.jpg" class="ls-l" alt="" style="top:-100%;left:1567px;opacity:1;height:267px;" data-ls="durationin:0;delayin:2500;fadein:false;scalexin:0;scaleyin:0;loop:true;loopoffsety:300sh;loopduration:10000;looprotate:random(-360,360);loopcount:-1;parallax:true;parallaxlevel:4;">
+							<img width="316" height="438" src="assets/images/_smarty/lan2.jpg" class="ls-l" alt="" style="top:-100%;left:-110px;opacity:1;" data-ls="durationin:0;delayin:5000;fadein:false;scalexin:0;scaleyin:0;loop:true;loopoffsety:300sh;loopduration:10000;looprotate:random(-360,360);loopcount:-1;parallax:true;parallaxlevel:12;">
+							<img width="688" height="406" src="assets/images/_smarty/lan3.jpg" class="ls-l" alt="" style="top:-100%;left:759px;opacity:1;" data-ls="durationin:0;delayin:7500;fadein:false;scalexin:0;scaleyin:0;loop:true;loopoffsety:300sh;loopduration:10000;looprotate:random(-360,360);loopcount:-1;parallax:true;parallaxlevel:2;">
+						</div>
+
+
+
+						<script type="text/javascript">
+                            var layer_options = {
+
+                                sliderVersion: '6.0.6',
+                                showCircleTimer: false,
+                                skinsPath: 'assets/plugins/slider.layerslider/skins/'
+
+                            }
+						</script>
+
+					</div>
+
+				</div>
+			</section>
+			<!-- /LAYER SLIDER -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- Welcome -->
+			<section>
+				<div class="container">
+
+					<div class="text-center clearfix">
+						<h1>Welcome! World Of <span>Automation</span>.</h1>
+						<h2 class="col-sm-10 offset-sm-1 mb-0 fw-400"></h2>
+					</div>
+
+				</div>
+			</section>
+			<!-- Welcome -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script type="text/javascript">var plugin_path = 'assets/plugins/';</script>
+		<script type="text/javascript" src="assets/plugins/jquery/jquery-3.2.1.min.js"></script>
+
+		<!-- LAYER SLIDER -->
+		<script type="text/javascript" src="assets/plugins/slider.layerslider/js/layerslider_pack.js"></script>
+
+		<script type="text/javascript" src="assets/js/view/demo.layerslider_slider.js"></script>
+
+		<!-- SCRIPTS -->
+		<script type="text/javascript" src="assets/js/scripts.js"></script>
+		
+		<!-- STYLESWITCHER - REMOVE -->
+		<script async type="text/javascript" src="demo_files/styleswitcher/styleswitcher.js"></script>
+	</body>
+</html>
